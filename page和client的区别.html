@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>测试pageX和clientX的区别</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>clientX和clientY是指可视区域的位置，就是你能看到的浏览器的窗口位置，有无滚动条都一样</p>
+    <p>pageX和pageY是指页面的位置，如果有滚动条，就加上滚动条的距离</p>
+</body>
+<script>  
+
+    document.onclick = function (e) {
+        e = e || window.event;
+        console.log('e.clientX:' + e.clientX + " e.clientY:" + e.clientY);
+        console.log('e.pageX:' + e.pageX + " e.pageY:" + e.pageY);
+    }
+
+</script>
+
+</html>

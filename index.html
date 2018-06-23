@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>H5播放器</title>
+    <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+    <div id="player" class="player">
+        <div id="title" class="title">
+            王菲 - 红豆.mp4
+        </div>
+        <div class="video">
+            <video id="video" src="video/王菲 - 红豆.mp4"></video>
+        </div>
+        <div id="control" class="control">
+            <button id="play" class="play">播放</button>
+            <button id="voice" class="voice">音量</button>
+            <div id="progress" class="progress">
+                <div id="time_tip" class="time_tip">
+                    <div id="time_text" class="time_text">03:16</div>
+                    <div id="time_arrow" class="time_arrow"></div>
+                </div>
+            </div>
+            <div class="time_panel">
+                <span id="time_display">0:00 / 0:00</span>
+            </div>
+            <button id="btnList" class="btnList">播放列表</button>
+            <div id="listPanel" class="listPanel">
+                <h4>播放列表</h4>
+                <div id="listContainer" class="listContainer">
+                    <ul id="list">
+                    </ul>
+                </div>
+                <div id="listBar" class="listBar"></div>
+            </div>
+            <div id="voice_panel" class="voice_panel">
+                <div id="voice_tip" class="voice_tip">100</div>
+                <div id="voice_bar" class="voice_bar">
+                    <div id="voice_circle" class="voice_circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
